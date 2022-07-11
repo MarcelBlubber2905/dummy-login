@@ -1,0 +1,26 @@
+:host(:hover)::before {
+    opacity: 0;
+}
+
+:host(:hover), :host(:active) {
+    transform: scale(0.9);
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+[part='icon']::before {
+    cursor: pointer;
+}
+
+:host([theme~="transparent"]) {
+    background-color: transparent;
+    border: none;
+}
+
+:host([theme~="transparent"]) [part='icon']::before {
+    color: var(--dark);
+}
+
+:host([theme~="transparent"]:hover)::before {
+    background-color: transparent;
+}

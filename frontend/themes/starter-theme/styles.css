@@ -1,0 +1,156 @@
+:root {
+    --light: #ffffff;
+    --dark: #242424;
+    --grey: #f9f9f9;
+    --highlight: #006e33;
+    --highlight-bg: rgba(177, 214, 0, .25);
+    --legal-dark: #384043;
+    --legal-light: #9fa6ab;
+    --media-dark: #61358b;
+    --media-light: #c75ee5;
+    --admin-dark: #003a70;
+    --admin-light: #5e8aff;
+    --digital-dark: #0086bf;
+    --digital-light: #71dbd4;
+    --tax-dark: #00594f;
+    --tax-light: #48d597;
+    --eco-dark: #006e33;
+    --eco-light: #b1d600;
+    --strategies-dark: #a07400;
+    --stratgies-light: #d5c28b;
+    --invest-dark: #ed8b00;
+    --invest-light: #ffdd00;
+    --accelerator-dark: #c20019;
+    --accelerator-light: #ff585d;
+    --people-dark: #82185c;
+    --people-light: #eb1984;
+
+    --dist-red-xs: 0.5rem;
+    --dist-yellow-s: 1rem;
+    --dist-purple-m: 1.5rem;
+    --dist-pink-l: 2rem;
+    --dist-cyan-xl: 2.5rem;
+    --dist-green-xxl: 3rem;
+
+    --vaadin-board-width-small: 750px;
+}
+
+@font-face {
+    font-family: 'Peak Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('/fonts/Peak-Extrabold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Peak Light';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('/fonts/Peak-Light.woff2') format('woff2');
+}
+
+* {
+    font-family: "Peak Light", sans-serif;
+    font-size: 1.0625rem;
+    /*line-height: 1.875rem;*/
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    min-height: 100vh;
+    max-width: 1920px;
+}
+
+/*
+ * General stuff
+ */
+
+h1,
+h1 *,
+h2,
+h2 * {
+    font-family: "Peak Extra Bold", sans-serif;
+    font-size: 3rem;
+    line-height: 3.25rem;
+}
+
+h3,
+h3 * {
+    font-family: "Peak Extra Bold", sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+h4,
+h4 * {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+h5,
+h5 * {
+    font-family: "Peak Extra Bold", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h6,
+h6 * {
+    font-family: "Peak Extra Bold", sans-serif;
+    font-size: 1.1875rem;
+    line-height: 2rem;
+    text-transform: none;
+}
+
+b, strong {
+    font-family: "Peak Extra Bold", sans-serif;
+    font-weight: normal;
+}
+
+a,
+a:visited {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+:host ::slotted(a) {
+    color: var(--dark);
+}
+
+vaadin-app-layout vaadin-tab a,
+vaadin-app-layout vaadin-tab a * {
+    color: var(--light);
+}
+
+vaadin-button {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 0;
+    height: 3.5rem;
+}
+
+vaadin-button a {
+    color: var(--light) !important;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+vaadin-button[theme~="light"],
+vaadin-button[theme~="light"] a {
+    color: var(--dark) !important;
+    background-color: var(--light);
+    border-color: var(--light);
+}
